@@ -1,0 +1,502 @@
+@charset "UTF-8";
+
+/* MOBILE FIRST */
+
+/* IMPORTS */
+@import url('https://fonts.googleapis.com/css2?family=Raleway:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+
+/* RESET */
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* TOPO DO HEADER */
+
+.topo-header{
+    display: flex;
+    justify-content: space-between;
+}
+
+.logo > img{
+    width: 4.2rem;
+    display: block;
+}
+
+.lupa, .logo{
+    padding: 0.7rem;
+}
+
+.lupa > a > img{
+    width: 1.9rem;
+    display: block;
+}
+
+/* NAV-BAR DO HEADER */
+
+.nav-bar{
+    background-color: black;
+    font-size: 0.9rem;
+    font-family: 'Raleway', sans-serif;
+}
+
+.lista-nav-bar{
+    display: flex;
+    list-style: none;
+}
+
+.lista-item{
+    padding: 0.8rem;
+    display: flex;
+    gap: 0.5rem;
+    align-items: center;
+}
+
+.lista-item a{
+    text-decoration: none;
+    color: white;
+}
+
+.lista-item i{
+    color: white;
+}
+
+/* FORMULÁRIO "FROM, TO" */
+.viagem-aviao{
+    display: block;
+}
+
+.viagem-hotel, .viagem-rental{
+    display: none;
+}
+
+/* VIAGEM DE AVIÃO */
+.viagem-aviao > h2{
+    font-family: 'Raleway', sans-serif;
+    font-weight: 390;
+    font-size: 1.4rem;
+    text-align: center;
+    font-family: 'Raleway', sans-serif;
+    background-color: white;
+    padding: 1.5rem 1rem 0.5rem 1rem;
+}
+
+.viagem-aviao > form{
+    font-family: 'Raleway', sans-serif;
+    padding: 1rem;
+    background-color: white;
+}
+
+.chegada-aviao{
+    margin-top: 1rem;
+}
+
+.partida-aviao > input, .chegada-aviao > input{
+    margin-top: 0.6rem;
+    border-radius: 0.2rem;
+    border: 0.124em solid #333333;
+    width: 100%;
+    height: 2.5rem;
+    padding: 0.5rem;
+}
+
+/* From uiverse.io by @e-coders */
+/* BOTÃO VIAGEM AVIÃO */
+.botao-viagem-aviao {
+    appearance: none;
+    background-color: transparent;
+    border: 0.124em solid #333333;
+    border-radius: 0.4em;
+    box-sizing: border-box;
+    color: #3B3B3B;
+    cursor: pointer;
+    font-family: 'Raleway', sans-serif;
+    font-size: 1rem;
+    font-weight: 600;
+    line-height: normal;
+    outline: none;
+    display: flex;
+    margin: 1.4rem auto;
+    padding: 0.7rem 2rem;
+    text-align: center;
+    text-decoration: none;
+    transition: all 300ms cubic-bezier(.23, 1, 0.32, 1);
+    user-select: none;
+    -webkit-user-select: none;
+    touch-action: manipulation;
+    will-change: transform;
+}
+   
+.botao-viagem-aviao:disabled {
+    pointer-events: none;
+}
+
+.botao-viagem-aviao:hover {
+    color: #fff;
+    background-color: #1A1A1A;
+    box-shadow: rgba(0, 0, 0, 0.2) 0 4px 10px;
+    cursor: pointer;
+}
+
+.botao-viagem-aviao:active {
+    box-shadow: none;
+    transform: translateY(0);
+}
+
+/* VIAGEM HOTEL */
+.viagem-hotel{
+    background-color: white;
+    font-family: 'Raleway', sans-serif;
+    padding: 0.5rem;
+}
+
+.viagem-hotel h2{
+    font-weight: 390;
+    margin-top: 0.6rem;
+    padding: 0.7875rem;
+    font-size: 1.5rem;
+    text-align: center;
+}
+
+.viagem-hotel p{
+    padding: 0.9875rem;
+}
+
+/* VIAGEM RENTAL */
+.viagem-rental{
+    background-color: white;
+    font-family: 'Raleway', sans-serif;
+    padding: 0.5rem;
+    text-align: center;
+}
+
+.viagem-rental h2{
+    font-weight: 390;
+    margin-top: 0.6rem;
+    padding: 0.7875rem;
+    font-size: 1.5rem;
+    text-align: center;
+}
+
+.viagem-rental p{
+    padding: 0.9875rem;
+    max-width: 100ch;
+    line-height: 1.35;
+    font-size: 0.95rem;
+}
+
+.botao-texto-rental{
+    margin-top: 0.6rem;
+    border-radius: 0.2rem;
+    border: 0.124em solid #333333;
+    height: 2.5rem;
+    width: 90%;
+    display: flex;
+    margin: 0 auto;
+    padding: 0.5rem;
+}
+
+.viagem-rental strong{
+    background-color: #FA553F;
+    padding: 0.2rem;
+    color: white;
+}
+
+/* CONTEÚDO PRINCIPAL */
+.main{
+    display: grid;
+    grid-template-columns: 1fr;
+    margin-top: 1rem;
+    padding: 0.7rem;
+    gap: 0.7rem;
+    max-width: 1200px;
+}
+
+body{
+    background-color: rgb(248, 248, 248);
+}
+
+/* GALERIA DE FOTOS 1 */
+.galeria1{
+    gap: 0.6rem;
+    display: grid;
+}
+
+.grid-um{
+    display: grid;
+    grid-template-columns: 1fr;
+}
+
+.grid-dois{
+    display: grid;
+    grid-template-columns: 1fr;
+    gap: 0.6rem;
+}
+
+.main > h1{
+    font-family: 'Raleway', sans-serif;
+    font-size: 1.3rem;
+    font-weight: 350;
+    text-align: center;
+    margin-top: 1rem;
+}
+
+.main > h2{
+    font-family: 'Raleway', sans-serif;
+    font-size: 1rem;
+    font-weight: 350;
+    text-align: center;
+    padding: 1rem;
+}
+
+.container{
+    position: relative;
+    box-shadow: 0 0.125rem 0.1875rem 0 rgb(0 0 0 / 16%), 0 0.125rem 0.625rem 0 rgb(0 0 0 / 12%);
+}
+
+.galeria1-imagem img{
+    max-width: 100%;
+    display: block;
+}
+
+.galeria1-texto{
+    position: absolute;
+    bottom: 0.1rem;
+    padding: 0.6rem;
+    color: rgba(255, 255, 255, 0.644);
+    font-family: 'Raleway', sans-serif;
+}
+
+/* GALERIA DE FOTOS 2 COM OS CARDS */
+.galeria2{
+    font-family: 'Raleway', sans-serif;
+}
+
+.grid-card{
+    display: grid;
+    gap: 0.6rem;
+}
+
+.card{
+    background-color: white;
+    box-shadow: 0 0.125rem 0.1875rem 0 rgb(0 0 0 / 16%), 0 0.125rem 0.500rem 0 rgb(0 0 0 / 12%);
+}
+
+.galeria2 > h1{
+    font-family: 'Raleway', sans-serif;
+    font-size: 1.3rem;
+    font-weight: 350;
+    text-align: center;
+    margin-top: 1rem;
+}
+
+.galeria2 > h2{
+    font-family: 'Raleway', sans-serif;
+    font-size: 1rem;
+    font-weight: 350;
+    text-align: center;
+    padding: 1rem;
+}
+
+.card-imagem > img{
+    max-width: 100%;
+    display: block;
+}
+
+.card-infos{
+    padding: 0.8rem;
+    line-height: 2;
+}
+
+.card-infos > h3{
+    font-weight: 350;
+}
+
+.card-infos > p{
+    font-size: 0.86rem;
+}
+
+.card-infos > a{
+    display: inline-block;
+    text-decoration: none;
+    color: white;
+    background-color: rgb(75, 75, 75);
+    box-shadow: 2px 2px 7px rgba(0, 0, 0, 0.185);
+    padding: 0.5rem;
+    margin: 0.1rem;
+    font-size: 0.8rem;
+}
+
+.preco{
+    opacity: 0.6;
+    margin: 0.6rem 0;
+}
+
+.parag{
+    line-height: 1.4;
+    margin: 0.6rem 0;
+}
+
+.card-infos > a:hover{
+    background-color: #d1d0d0;
+    color: black;
+}
+
+/* FORMULÁRIO PARA RECEBER OFERTAS */
+.form-ofertas{
+    font-family: 'Raleway', sans-serif;
+    padding: 0.8rem;
+    background-color: black;
+    color: white;
+    opacity: 0.7;
+    box-shadow: 0 0.125rem 0.1875rem 0 rgb(0 0 0 / 16%), 0 0.125rem 0.625rem 0 rgb(0 0 0 / 12%);
+}
+
+.form-ofertas:hover{
+    opacity: 1;
+}
+
+.form-ofertas > h1{
+    font-size: 1.5rem;
+    font-weight: 400;
+    margin: 0.8rem 0;
+}
+
+.form-ofertas > p{
+    margin: 0.8rem 0;
+    font-weight: 300;
+}
+
+.input-ofertas{
+    margin: 0.6rem 0;
+}
+
+.input-ofertas > input{
+    width: 100%;
+    margin: 0.3rem 0;
+    height: 1.8rem;
+    border-radius: 0.2rem;
+    border: none;
+    padding: 0.4rem;
+}
+
+.botao-ofertas{
+    padding: 0.6rem;
+    background-color: #f44336;
+    color: white;
+    border: none;
+}
+
+.botao-ofertas:hover{
+    background-color: #d1d0d0;
+    color: black;
+    cursor: pointer;
+}
+
+/* ÁREA DE CONTATO E MENSAGEM */
+.contato{
+    font-family: 'Raleway', sans-serif;
+}
+
+.contato > h1{
+    font-size: 1.7rem;
+    font-weight: 400;
+}
+
+.contato > p{
+    margin: 0.8rem 0;
+}
+
+.item-socials{
+    display: flex;
+    align-items: center;
+    gap: 0.7rem;
+}
+
+.lista-socials{
+    font-size: 1rem;
+}
+
+.lista-socials > li + li{
+    margin-top: 0.4rem;
+}
+
+.contato > form{
+    margin: 1rem 0;
+}
+
+.contato > form > input{
+    height: 2.3rem;
+    width: 100%;
+    margin-bottom: 0.6rem;
+    padding: 0.4rem;
+}
+
+.contato > form > textarea{
+    width: 100%;
+    padding: 0.4rem;
+}
+
+textarea::placeholder, input::placeholder{
+    font-family: 'Raleway', sans-serif;
+}
+
+.botao-contato{
+    padding: 0.9rem;
+    margin-top: 0.5rem;
+    font-family: 'Raleway', sans-serif;
+    background-color: black;
+    color: white;
+    border: none;
+}
+
+.botao-contato:hover{
+    color: black;
+    background-color: #d1d0d0;
+    cursor: pointer;
+}
+
+/* FOOTER / RODAPÉ */
+.footer{
+    font-family: 'Raleway', sans-serif;
+    background-color: rgb(248, 248, 248);
+}
+
+.footer > h3{
+    text-align: center;
+    font-weight: 350;
+    font-size: 1rem;
+    padding: 1rem;
+}
+
+.lista-socials-footer{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    list-style: none;
+    gap: 0.8rem;
+    margin: 2rem 0;
+}
+
+.footer > p{
+    text-align: center;
+    font-family: 'Raleway', sans-serif;
+    font-size: 0.8rem;
+    font-weight: 300;
+    padding: 1rem;
+}
+
+.footer > p > a{
+    text-decoration: underline;
+    color: black;
+}
+
+.footer > ul > li > a{
+    text-decoration: none;
+    color: black;
+}
+
+.lista-socials-footer li a:hover{
+    color: #a7a7a7;
+}

@@ -1,0 +1,251 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="styles/mobile-first.css">
+    <link rel="stylesheet" href="styles/media-query.css">
+    <link rel="shortcut icon" href="images/aviao.png" type="image/x-icon">
+    <script src="https://kit.fontawesome.com/7e0fee57a9.js" 
+    crossorigin="anonymous"></script>
+    <title>Viage com a Logo</title>
+</head>
+<body>
+    
+    <header class="header">
+
+        <div class="topo-header">
+            <div class="logo">
+                <img src="images/logo.svg" alt="Logo">
+            </div>
+
+            <div class="lupa">
+                <a href="#"><img src="images/lupa.old.svg" alt="Pesquisar"></a>
+            </div>
+        </div>
+
+        <div class="nav-viagens">
+            <nav class="nav-bar">
+                <ul class="lista-nav-bar">
+                    <li class="lista-item" id="item_um" onclick="exibir1()">
+                        <i class="fa-solid fa-plane"></i>
+                        <a href="#">Flight</a>
+                    </li>
+                    <li class="lista-item" id="item_dois" onclick="exibir2()">
+                        <i class="fa-solid fa-hotel"></i>
+                        <a href="#">Hotel</a>
+                    </li>
+                    <li class="lista-item" id="item_tres" onclick="exibir3()">
+                        <i class="fa-solid fa-car"></i>
+                        <a href="#">Rental</a>
+                    </li>
+                </ul>
+            </nav>
+
+            <article class="viagem-aviao">
+                
+                <h2>Travel the world with us</h2>
+
+                <form action="cadastro.php" method="get">
+
+                    <div class="container-aviao">
+                        <div class="partida-aviao">
+                            <label for="partida_aviao">From </label>
+                            <input type="text" name="" id="partida_aviao" required minlength="2" maxlength="40" placeholder="Departing from">
+                        </div>
+                        <div class="chegada-aviao">
+                            <label for="chegada_aviao">To </label>
+                            <input type="text" name="" id="chegada_aviao" required minlength="2" maxlength="40" placeholder="Arriving at">
+                        </div>
+                    </div>
+
+                    <button type="submit" class="botao-viagem-aviao">
+                        Search
+                    </button>
+                </form>
+            </article>
+            
+            <article class="viagem-hotel">
+                <h2>Find the best hotels</h2>
+                <p>Book a hotel with us and get the best fares and promotions.</p>
+                <p>We know hotels - we know comfort.</p>
+                <button type="submit" class="botao-viagem-aviao teste">
+                    Search
+                </button>
+            </article>
+
+            <article class="viagem-rental">
+                <h2>Best car rental in the world!</h2>
+                <p><strong>DISCOUNT!</strong> Special offer if you book today: 25% off anywhere in the world with CarServiceRentalRUs</p>
+                <input type="text" name="" id="irental" class="botao-texto-rental" placeholder="Rental">
+                <button type="submit" class="botao-viagem-aviao">
+                    Search
+                </button>
+            </article>
+        </div>
+
+    </header>
+
+    <main class="main">
+            <h1>Good Offers Right Now</h1>
+            <h2>Up to 50% discount.</h2>
+
+        <section class="galeria1">
+
+            <div class="grid-um">
+
+                <div class="imagem1 galeria1-imagem container">
+
+                    <div>
+                        <img src="images/cinqueterre.jpg" alt="Cinque Terre">
+                    </div>
+
+                    <div class="galeria1-texto">Cinque Terre</div>
+
+                </div>
+
+            </div>
+
+            <div class="grid-dois">
+
+                <div>
+                    <div class="galeria1-imagem container">
+                        <div>
+                            <img src="images/newyork.jpg" alt="New York">
+                        </div>
+                        <div class="galeria1-texto">New York</div>
+                    </div>
+                </div>
+
+                <div>
+                    <div class="galeria1-imagem container">
+                        <div>
+                            <img src="images/sanfran.jpg" alt="San Francisco">
+                        </div>
+                        <div class="galeria1-texto">San Francisco</div>
+                    </div>
+                </div>
+
+                <div>
+                    <div class="galeria1-imagem container">
+                        <div>
+                            <img src="images/pisa.jpg" alt="Pisa">
+                        </div>
+                        <div class="galeria1-texto">Pisa</div>
+                    </div>
+                </div>
+
+                <div>
+                    <div class="galeria1-imagem container">
+                        <div>
+                            <img src="images/paris.jpg" alt="Paris">
+                        </div>
+                        <div class="galeria1-texto">Paris</div>
+                    </div>
+                </div>
+
+            </div>
+        </section>
+
+        <section class="galeria2">
+            <h1>Explore Nature</h1>
+            <h2>Travel with us and see nature at as front.</h2>
+
+            <div class="grid-card">
+                <div class="card">
+                    <div class="card-imagem"><img src="images/ocean.jpg" alt="Ocean"></div>
+                    <div class="card-infos">
+                        <h3>West Coast, Norway</h3>
+                        <p class="preco">Roundtrip from $79</p>
+                        <p class="parag">Praesent tindicunt sed tellus ut rutrum sed vitae justo.</p>
+                        <a href="#">Buy Tickets</a>
+                    </div>
+                </div>
+                <div class="card">
+                    <div class="card-imagem"><img src="images/mountains.jpg" alt="Moutains"></div>
+                    <div class="card-infos">
+                        <h3>Mountains, Austria</h3>
+                        <p class="preco">One-way from $39</p>
+                        <p class="parag">Praesent tindicunt sed tellus ut rutrum sed vitae justo.</p>
+                        <a href="#">Buy Tickets</a>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <article class="form-ofertas">
+            <h1>Get the best offers first!</h1>
+            <p>Join our newsletter.</p>
+
+            <form action="cadastro.php" method="post">
+                <div class="input-ofertas">
+                    <label for="email">E-mail</label><br>
+                    <input type="email" name="" id="email" placeholder="Email">
+                </div>
+
+                <button type="submit" class="botao-ofertas">
+                    Subscribe
+                </button>
+            </form>
+        </article>
+
+        <article class="contato">
+
+            <h1>Contact</h1>
+            <p>Let us book your next trip!</p>
+
+            <div class="socials">
+
+                <ul class="lista-socials">
+                    <li class="item-socials">
+                        <i class="fa-solid fa-location-dot"></i>
+                        Chicago, US
+                    </li>
+
+                    <li class="item-socials">
+                        <i class="fa-solid fa-phone"></i>
+                        Phone: +00 151515
+                    </li>
+
+                    <li class="item-socials">
+                        <i class="fa-solid fa-envelope"></i>
+                        Email: mail@mail.com
+                    </li>
+                </ul>
+
+            </div>
+
+            <form action="cadastro.php" method="post">
+
+                <input type="text" name="" id="nome" placeholder="Name">
+                <input type="email" name="" id="mail" placeholder="Email">
+                <textarea name="" id="message" cols="16" rows="8" placeholder="Message"></textarea>
+                <button type="submit" class="botao-contato">
+                    SEND MESSAGE
+                </button>
+
+            </form>
+
+        </article>
+
+    </main>
+
+    <footer class="footer">
+        <h3>Find Us On</h3>
+
+        <ul class="lista-socials-footer">
+           <li><a href="#"><i class="fa-brands fa-square-facebook"></i></a></li>
+           <li><a href="#"><i class="fa-brands fa-instagram"></i></a></li>
+           <li><a href="#"><i class="fa-brands fa-twitter"></i></a></li>
+           <li><a href="#"><i class="fa-brands fa-snapchat"></i></a></li>
+           <li><a href="#"><i class="fa-brands fa-pinterest-p"></i></a></li>
+           <li><a href="#"><i class="fa-brands fa-linkedin-in"></i></a></li>
+        </ul>
+
+        <p>Powered by <a href="#">w3.css</a></p>
+    </footer>
+
+    <script src="js/script.js"></script>
+</body>
+</html>
